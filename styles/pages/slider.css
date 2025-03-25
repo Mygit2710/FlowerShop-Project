@@ -1,0 +1,74 @@
+.slider-image-container {
+  width: 55vmin;
+  height: 50vmin;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 40%;
+  left: 50%;
+  border: 10px solid pink;
+  border-radius: 8px;
+  box-shadow: 10px 25px 28px rgb(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.images-container {
+  width: 100%;
+  display: flex;
+  animation: slide 20s infinite;
+}
+
+.image-slide {
+  width: 55vmin;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0); /* First image */
+  }
+
+  25% {
+    transform: translateX(-30%); /* Transition to the second image */
+  }
+
+  50% {
+    transform: translateX(-160%); /* Transition to the third image */
+  }
+
+  75% {
+    transform: translateX(-270%); /* Transition to the fourth image */
+  }
+
+  88% {
+    transform: translateX(-400%); /* Transition to the fifth image */
+  }
+  100% {
+    transform: translateX(-500%); /* Transition to the fifth image */
+  }
+}
+
+@media (max-width: 768px) {
+  @keyframes slide {
+    0% {
+      transform: translateX(5%); /* First image */
+    }
+
+    25% {
+      transform: translateX(-10%); /* Transition to the second image */
+    }
+
+    50% {
+      transform: translateX(-200%); /* Transition to the third image */
+    }
+
+    75% {
+      transform: translateX(-300%); /* Transition to the fourth image */
+    }
+
+    88% {
+      transform: translateX(-430%); /* Transition to the fifth image */
+    }
+    100% {
+      transform: translateX(-550%); /* Transition to the fifth image */
+    }
+  }
+}

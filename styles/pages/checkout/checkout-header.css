@@ -1,0 +1,80 @@
+.checkout-header {
+  background: linear-gradient(to right, #db7ac6, #8ba9dc);
+  display: flex;
+  height: 60px;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.checkout-header-left-section {
+  width: 180px;
+}
+
+.header-link {
+  display: inline-block;
+  border-radius: 2px;
+  padding: 2px;
+  height: 50px;
+  margin-top: 1.5px;
+  text-decoration: none;
+}
+
+.header-link:hover {
+  border: 1px solid purple;
+}
+
+.flower-logo {
+  width: 50px;
+  border-radius: 2px;
+}
+
+.checkout-header-middle-section {
+  flex: 1;
+  flex-shrink: 0;
+  text-align: center;
+  margin-right: 200px;
+  font-size: 25px;
+  font-weight: bold;
+  color: darkblue;
+  display: flex;
+  justify-content: center;
+}
+
+.return-to-home-link {
+  color: rgb(193, 60, 60);
+  font-size: 23px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .checkout-header-middle-section {
+    font-size: 20px;
+    margin-right: 60px;
+  }
+
+  .return-to-home-link {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 575px) {
+  .checkout-header-middle-section {
+    margin-right: 5px;
+  }
+}
+
+.checkout-header-right-section {
+  text-align: right;
+  width: 150px;
+}
+.lock-icon {
+  width: 30px;
+  margin-right: 30px;
+}

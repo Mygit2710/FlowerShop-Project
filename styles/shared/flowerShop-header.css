@@ -1,0 +1,102 @@
+.flower-header {
+  background: linear-gradient(to right, #db7ac6, #8ba9dc);
+  display: flex;
+  height: 60px;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.flower-header-left-section {
+  width: 180px;
+}
+
+.header-link {
+  display: inline-block;
+  border-radius: 2px;
+  padding: 2px;
+  height: 50px;
+  margin-top: 1.5px;
+  text-decoration: none;
+}
+
+.header-link:hover {
+  border: 1px solid purple;
+}
+
+.flower-logo {
+  width: 50px;
+  border-radius: 2px;
+}
+
+.flower-header-middle-section {
+  max-width: 850px;
+  flex: 1;
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.search-bar {
+  flex: 1;
+  height: 38px;
+  font-size: 16px;
+  padding-left: 15px;
+  border: none;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.search-button {
+  background-color: #94bbe9;
+  border: none;
+  height: 40px;
+  width: 45px;
+  border-radius: 0px 4px 4px 0px;
+  cursor: pointer;
+}
+
+.search-icon {
+  width: 22px;
+  margin-top: 3px;
+  margin-left: 2px;
+}
+
+.flower-header-right-section {
+  width: 180px;
+  display: flex;
+  justify-content: end;
+}
+
+.cart-link {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-left: 25px;
+}
+
+.cart-icon {
+  width: 50px;
+}
+
+.cart-text {
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 12px;
+  color: darkblue;
+}
+
+.cart-quantity {
+  font-size: 16px;
+  font-weight: 700;
+  color: orangered;
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  width: 26px;
+  text-align: center;
+}
